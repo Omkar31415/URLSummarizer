@@ -1,0 +1,35 @@
+follow these steps for deployment in HuggingFace with Github Actions
+
+step 1: create a git repo and clone it 
+git clone https://github.com/Omkar31415/URLSummarizer.git
+
+step 2: create a space in hugging face and run below commands after cloning git
+
+git remote set-url origin https://OmkarDattaSowri:<token>@huggingface.co/spaces/OmkarDattaSowri/URLSummarizerLLM
+
+- you can create token from huggingface (make sure it has write permissions)
+
+step 3:
+git pull origin
+
+step 4: 
+git remote set-url origin https://github.com/Omkar31415/URLSummarizer.git
+
+step 5:
+git add .
+git commit -m "HF initial commit"
+git push
+
+step 6:
+add all the deployment files along with .github/workflows/main.yaml file to your current directory
+
+step 7:
+before pushing go to your github repo and add a secret key in repo settings->Secrets and Variables->Actions->Create new secret-> name as HF_TOKEN and your "write" token
+
+step 8:
+make sure your application runs smoothly and perfectly in your local repo
+
+step 9:
+git add .
+git commit -m "Final HF Deployment Done"
+git push

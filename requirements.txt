@@ -1,0 +1,12 @@
+langchain
+langchain-community
+langchain_text_splitters
+langchain_huggingface
+langchain-groq
+validators==0.28.1
+youtube_transcript_api
+unstructured
+pytube
+numexpr
+huggingface_hub
+streamlit
